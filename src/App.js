@@ -44,8 +44,8 @@ const App = () => {
         <h2>Color Background Change</h2>
         <div style={{
           background: bgcolor,
-          width: '200px',
-          height: '200px',
+          width: '20px',
+          height: '20px',
           margin: '0 auto',
         }}>
           <button onClick={() => setbgColor(bgcolor === 'lightblue' ? 'red' : 'lightblue')}>
