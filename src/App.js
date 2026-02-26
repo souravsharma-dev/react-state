@@ -5,6 +5,8 @@ const App = () => {
   const [showImage, setShowImage ]= useState(true);
 
   const [bgcolor, setbgColor] = useState('red');
+
+  const [inputValue, setInputValue] = useState('');
  
 
   return (
@@ -15,6 +17,7 @@ const App = () => {
       }
     }>
       <h1>This is App About States of React</h1>
+      
       <div style={{
         margin : '0 auto',
         width: '50%',
@@ -44,12 +47,31 @@ const App = () => {
         <h2>Color Background Change</h2>
         <div style={{
           background: bgcolor,
-          width: '20px',
-          height: '20px',
+          width: '200px',
+          height: '200px',
           margin: '0 auto',
         }}>
           <button onClick={() => setbgColor(bgcolor === 'lightblue' ? 'red' : 'lightblue')}>
           {bgcolor === 'lightblue' ? 'lightblue' : 'Red'}</button>
+        </div>
+
+        <div style={{
+        margin : '0 auto',
+        width: '50%',
+        background: 'white',
+        padding: '20px',
+      }}>
+        <h2>Input Input Preview</h2>
+        <input placeholder="Enter text here"
+        onChange={(e)=> (setInputValue(e.target.value))}
+        />
+
+        <h3>Text Preview:
+          {inputValue}
+        </h3>
+        
+
+
         </div>
 
 
