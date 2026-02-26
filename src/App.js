@@ -7,6 +7,10 @@ const App = () => {
   const [bgcolor, setbgColor] = useState('red');
 
   const [inputValue, setInputValue] = useState('');
+
+   const [FontSize, setFontSize] = useState('');
+
+  const [colorBox, setColorBox] = useState('red');
  
 
   return (
@@ -69,11 +73,40 @@ const App = () => {
         <h3>Text Preview:
           {inputValue}
         </h3>
-        
-
-
         </div>
 
+        <div style={{
+        margin : '0 auto',
+        width: '50%',
+        background: 'white',
+        padding: '20px',
+      }}>
+        
+        <input type="range" placeholder="Enter text here"
+        onChange={(e)=> (setFontSize(Number(e.target.value)))}
+        />
+        
+        <h3>Text Preview:
+          {FontSize}
+        </h3>
+        <h2 style={{
+          fontSize: FontSize
+        }}>Font Size Preview</h2>
+        </div>
+
+        <div>
+          <h1>Enter Color</h1>
+          <input placeholder='Enter Color Name' onChange={(e)=> (setColorBox(e.target.value))} value={colorBox} />
+
+          <div style={{
+            width: '200px',
+            height: '200px',
+            background: colorBox,
+            margin: '0 auto',
+          }}>
+            
+          </div>
+        </div>
 
       </div>
 
