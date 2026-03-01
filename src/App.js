@@ -10,7 +10,7 @@ const App = () => {
 
    const [FontSize, setFontSize] = useState('');
 
-  const [colorBox, setColorBox] = useState('orange');
+  const [colorBox, setColorBox] = useState('blue');
  
 
   return (
