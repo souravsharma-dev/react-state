@@ -16,7 +16,7 @@ const App = () => {
   return (
     <div style={
       {minHeight:"100vh",
-        background: "lightblue",
+        background: "orange",
         textAlign: "center",
       }
     }>
