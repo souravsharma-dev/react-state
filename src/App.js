@@ -2,6 +2,31 @@ import { useState } from 'react'
 
 const App = () => {
 
+  // Spread Operator
+
+  //arrays
+  const studentList1 = ["Suresh", "Ramesh", "Naresh", "Ganesh"]
+  const studentList2 = ["Mayesh", "Samesh", "Laresh", "Aanesh"]
+
+  const studentListAll= [...studentList1,...studentList2]
+  console.log(studentListAll);
+
+  //objects
+  const Marks1 = {
+    Math: 90,
+    Science: 65,
+    English: 92,
+  }
+
+  const Marks2 = {
+    History: 88,
+    Geography: 91,
+    Computer: 95,
+  }
+
+  const MarksAll = {...Marks1,...Marks2}
+  console.log(MarksAll);
+
   const [showImage, setShowImage ]= useState(true);
 
   const [bgcolor, setbgColor] = useState('red');
