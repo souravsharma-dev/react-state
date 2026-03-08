@@ -20,7 +20,7 @@ const App = () => {
 
   const Marks2 = {
     History: 88,
-    Geography: 91,
+    Geography: 90,
     Computer: 95,
   }
 
