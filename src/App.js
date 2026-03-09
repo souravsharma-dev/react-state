@@ -27,6 +27,20 @@ const App = () => {
   const MarksAll = {...Marks1,...Marks2}
   console.log(MarksAll);
 
+  const [teachers, setTeachers]=useState(["Mr. Smith", "Ms. Johnson", "Mrs. Lee", "Mr. Brown"]);
+
+  const deleteTeacher = (index) =>{
+    const copyofTeachers = [...teachers];
+    copyofTeachers.splice(index,1);
+    setTeachers(copyofTeachers);
+  }
+
+  const [addTeacher, setAddTeacher] = useState('');
+
+  const teacherAdded = () =>{
+    setTeachers([...teachers, addTeacher]);
+  }
+
   const [showImage, setShowImage ]= useState(true);
 
   const [bgcolor, setbgColor] = useState('red');
@@ -132,6 +146,21 @@ const App = () => {
             
           </div>
         </div>
+
+          <div>
+        <h2>Update and Delete Array using useState</h2>
+        <ul>
+          {
+            teachers.map((item , index)=>
+            <li key={index}>{item}
+            <button onClick={()=>deleteTeacher(index)}> Delete </button>
+            </li>
+          )}
+        </ul>
+
+        <input onChange={(e)=>setAddTeacher(e.target.value)}/>
+        <button onClick={teacherAdded}> Add Teacher</button>
+      </div>
 
       </div>
 
