@@ -43,7 +43,7 @@ const App = () => {
 
   const [showImage, setShowImage ]= useState(true);
 
-  const [bgcolor, setbgColor] = useState('red');
+  const [bgcolor, setbgColor] = useState('blue');
 
   const [inputValue, setInputValue] = useState('');
 
