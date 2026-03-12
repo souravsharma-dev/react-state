@@ -43,7 +43,7 @@ const App = () => {
 
   const [showImage, setShowImage ]= useState(true);
 
-  const [bgcolor, setbgColor] = useState('blue');
+  const [bgcolor, setbgColor] = useState('orange');
 
   const [inputValue, setInputValue] = useState('');
 
@@ -55,7 +55,7 @@ const App = () => {
   return (
     <div style={
       {minHeight:"100vh",
-        background: "blue",
+        background: "orange",
         textAlign: "center",
       }
     }>
@@ -117,7 +117,7 @@ const App = () => {
         <div style={{
         margin : '0 auto',
         width: '50%',
-        background: 'white',
+        background: 'green',
         padding: '20px',
       }}>
         
