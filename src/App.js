@@ -121,7 +121,7 @@ const App = () => {
         padding: '20px',
       }}>
         
-        <input type="range" placeholder="Enter text here"
+        <input type="range" placeholder="Enter here"
         onChange={(e)=> (setFontSize(Number(e.target.value)))}
         />
         
