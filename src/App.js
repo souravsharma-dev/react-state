@@ -117,7 +117,7 @@ const App = () => {
         <div style={{
         margin : '0 auto',
         width: '50%',
-        background: 'orange',
+        background: 'red',
         padding: '20px',
       }}>
         
