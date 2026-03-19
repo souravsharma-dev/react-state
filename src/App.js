@@ -135,7 +135,7 @@ const App = () => {
 
         <div>
           <h1>Enter Color</h1>
-          <input placeholder='Enter Color Name' onChange={(e)=> (setColorBox(e.target.value))} value={colorBox} />
+          <input placeholder='Enter Name of the Color' onChange={(e)=> (setColorBox(e.target.value))} value={colorBox} />
 
           <div style={{
             width: '200px',
