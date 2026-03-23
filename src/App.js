@@ -130,7 +130,7 @@ const App = () => {
         </h3>
         <h2 style={{
           fontSize: FontSize
-        }}>Font Size Preview</h2>
+        }}>Font Size Live</h2>
         </div>
 
         <div>
