@@ -118,7 +118,7 @@ const App = () => {
         margin : '0 auto',
         width: '50%',
         background: 'orange',
-        padding: '20px',
+        padding: '26px',
       }}>
         
         <input type="range" placeholder="Enter here"
